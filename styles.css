@@ -9,8 +9,12 @@ body {
 }
 
 .flex-container {
-    /* display: flex;  */
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
     background-color: #f4f4f4;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-container::after {
@@ -25,4 +29,8 @@ body {
     background-color: #254de4;
     color: #fff;
     margin: 10px;
+}
+
+.item:ntn-of-type(3) {
+    align-self: end;
 }
